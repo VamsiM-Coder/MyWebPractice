@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFrames</title>
+</head>
+<body>
+    <h2>AdvertiseMents1:</h2>
+
+    <iframe src = "video.html" height = "500px" width = "700px" frameborder="5" scrolling="yes"></iframe>
+    <!-- Defaultly scrolling is yes if we manually set and unset the scrolling-->
+
+
+     <!-- src only analyze the links/ URL But
+     If we use srcdoc then it can analyze URL & Tags
+     srcdoc -> Only Accepts values in Single Quotes-->
+
+    <h2>AdvertiseMents2:</h2>
+    <iframe srcdoc='
+        <h3>Frontend Classes are Going On A3 Classroom</h3>
+        <a href="https://www.kodnest.com/" target="iframe3">
+            Click here to open Kodnest website
+        </a>'
+        height="300" 
+        width="500">
+    </iframe>
+
+     <h2>AdvertiseMents3:</h2>
+    <iframe srcdoc='
+        <h3>Frontend Classes are Going On A3 Classroom</h3>'
+        name="iframe3"
+        height="300" 
+        width="500">
+    </iframe>
+    
+    <!-- If I Created 3 Frames, 
+         If i click 2 frame link, I want to open in 3 frame 
+         sol:
+         We can do this using name attribute in 3rd frame with target in 2nd frame -->
+
+</body>
+</html>
