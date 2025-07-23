@@ -24,19 +24,74 @@
         <br><br>
 
         <label for="doj">Date of Joining:</label>
-        <input type="date" id="doj" name="doj" placeholder="Enter Date of Joining" required>
+        <input type="date" id="doj" name="doj" placeholder="Enter DOJ"required>
         <br><br>
 
         <label for="time">Preferred Time:</label>
-        <input type="time" id="time" name="time" placeholder="Select Preferred Time" required>
+        <input type="time" id="time" name="time" title="Select Preferred Time">
         <br><br>
+
+        <label for="datetime">Preferred Date and Time:</label>
+        <input type="datetime" id="datetime" name="datetime" title="Select Preferred Date and Time">
+        <br><br>
+
+        <label for="datetimelocal">Preferred Date and Time with Timezone:</label>
+        <input type="datetime-local" id="datetimelocal" name="datetimelocal" title="Select Preferred Date and Time with Timezone">
+        <br><br>
+
+        <label for="week">Preferred Weekday:</label>
+        <input type="week" id="week" name="week" placeholder="Select Preferred Week" required>
+        <br><br>
+
+        <label for="color">Favourite Color:</label>
+        <input type="color" id="color" name="color" title="Select your favorite color">
+        <br><br>
+
+        
 
         <label for="links">Github:</label>
         <input type="url" id="links" name="links" placeholder="Enter your Github URL" required>
         <br><br>
 
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
+        <label for="file">Upload File:</label>
+        <input type="file" id="file" name="file" accept=".txt,.pdf,.docx" title="Upload a file (txt, pdf, docx)">
+        <br><br>
+
+        <label for="skills">HTML</label>
+        <input type="checkbox" id="skill" name="skill" value="html">
+        <label for="skills">CSS</label>
+        <input type="checkbox" id="skill" name="skill" value="css">
+        <label for="skills">JavaScript</label>
+        <input type="checkbox" id="skill" name="skill" value="js">
+        <br><br>
+
+        <!-- Gender is must be one, So we want to use name attribute with same name then it only select one-->
+        <label for="gender">Male</label>
+        <input type="radio" id="gender" name="gender" value="male">
+        <label for="gender">Female</label>
+        <input type="radio" id="gender" name="gender" value="female">
+        <label for="gender">Others</label>
+        <input type="radio" id="gender" name="gender" value="others">
+        <br><br>
+
+
+        <!-- For radio and Checkbox value attribute is used to process send the data to server.
+             What we give data in value that data is stored in server.
+             In this name and for is optional if we write input tag in label tag-->
+
+        <label for="skillrange">Skill Rate in HTML</label>    
+        <input type="range" id="skillrange" name="skillrange" title="Rate your HTML skills from 1 to 10">
+        <br><br> 
+        <!-- Defaultly if we don't take min and max range then 0-100 if we manually set then use max, min and val is set default-->
+        
+        <label for="skillrange">Skill Rate in CSS</label>
+        <input type="range" id="skillrange" name="skillrange" min="1" max="10" value="5" title="Rate your CSS skills from 1 to 10">
+        <br><br>
+
+        <!--file:///C:/Users/mvams/OneDrive/OfficeMobile/Documents/Web%20Practice/HTML/Basic-Html/forms.html?name=Vamsi&email=mandalavamsi%40gmailcom&pass=4559893&age=34&doj=2025-07-23&time=13%3A43&datetime=22-07-2025&datetimelocal=2025-07-23T13%3A43&week=2025-W30&color=%23000000&links=https%3A%2F%2Fwww.github.com&file=Himanth_Resume.pdf&skill=html&skill=js&gender=male&skillrange=2 -->
+
+        <button type="submit">SUBMIT</button>
+        <button type="reset">RESET</button>
 
     </form>
 </body>
