@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms 2</title>
+</head>
+<body>
+    <h2>Student Information Form</h2>
+
+    <form>
+
+     <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" name="username" id="fullname" title="Enter your full name" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" title="Enter your email" required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" title="Enter your password">
+        <br><br>
+
+        <label for="dob">Date Of Birth:</label>
+        <input type="date" name="dob" id="dob" title="Select your date of birth">
+        <br><br>
+
+        <label>Short Bio:</label>
+        <textarea name="bio" rows="3" cols="30">
+            Tell us about yourself
+        </textarea>
+        <br><br>
+
+      </fieldset>  
+      <br>
+
+      <fieldset>
+
+         <legend>Gender</legend>
+
+        <label for="gender">Male</label>
+        <input type="radio" name="gender" id="gender" value="male">
+        <br>
+
+        <label for="gender">Female</label>
+        <input type="radio" name="gender" id="gender" value="female">
+        <br>
+
+        <label for="gender">Other</label>
+        <input type="radio" name="gender" id="gender" value="other">
+        <br>
+
+      </fieldset>
+      <br>
+
+      <fieldset>
+
+        <legend>Areas of Interest</legend>
+
+        <label for="web">Web Development</label>
+        <input type="checkbox" name="web" id="web" value="webdev">
+        <br>
+
+        <label for="ai">Artificial Intelligence</label>
+        <input type="checkbox" name="ai" id="ai" value="ai">
+        <br>
+
+        <label for="ds">Data Science</label>
+        <input type="checkbox" name="ds" id="ds" value="datascience">
+
+      </fieldset>
+        <br>
+        
+      <fieldset>
+
+        <legend>Programming Skill Level</legend>
+
+        <label for="skill">Rate your skill (0 to 10):</label>
+        <input type="range" name="skill" id="skill" min="0" max="10" value="5">
+
+        <br><br>
+
+      </fieldset>
+      <br>
+
+      <fieldset>
+
+        <legend>Upload Your Photo</legend>
+
+        <input type="file" name="photo" id="photo" accept=".jpg,.png" title="Upload your photo">
+        <br><br>
+
+       </fieldset>
+       <br>  
+ 
+
+        <button type="Submit">SUBMIT</button>
+        <button type="Reset">RESET</button>
+
+
+    </form>
+</body>
+</html>

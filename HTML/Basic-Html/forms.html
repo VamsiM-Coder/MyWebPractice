@@ -7,8 +7,13 @@
 </head>
 <body>
     <form>
+        <h1>Form Data</h1>
+        <p>Enter your details below:</p>
+        <fieldset>
+
+          <legend>Personal Information</legend>  
         <label for="name">UserName:</label>
-        <input type="text" id="name" name="name" placeholder="Enter Your Name" required >
+        <input type="text" id="name" name="name" placeholder="Enter Your Name" >
         <br><br>
 
         <label for="email">Email:</label>
@@ -24,7 +29,7 @@
         <br><br>
 
         <label for="doj">Date of Joining:</label>
-        <input type="date" id="doj" name="doj" placeholder="Enter DOJ"required>
+        <input type="date" id="doj" name="doj" placeholder="Enter DOJ">
         <br><br>
 
         <label for="time">Preferred Time:</label>
@@ -40,17 +45,22 @@
         <br><br>
 
         <label for="week">Preferred Weekday:</label>
-        <input type="week" id="week" name="week" placeholder="Select Preferred Week" required>
+        <input type="week" id="week" name="week" placeholder="Select Preferred Week">
         <br><br>
 
         <label for="color">Favourite Color:</label>
         <input type="color" id="color" name="color" title="Select your favorite color">
         <br><br>
 
-        
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+            <legend>Extra Information</legend>
 
         <label for="links">Github:</label>
-        <input type="url" id="links" name="links" placeholder="Enter your Github URL" required>
+        <input type="url" id="links" name="links" placeholder="Enter your Github URL">
         <br><br>
 
         <label for="file">Upload File:</label>
@@ -75,7 +85,7 @@
         <br><br>
 
 
-        <!-- For radio and Checkbox value attribute is used to process send the data to server.
+        <!-- For radio and Checkbox,Select value attribute is used to process send the data to server.
              What we give data in value that data is stored in server.
              In this name and for is optional if we write input tag in label tag-->
 
@@ -90,6 +100,31 @@
 
         <!--file:///C:/Users/mvams/OneDrive/OfficeMobile/Documents/Web%20Practice/HTML/Basic-Html/forms.html?name=Vamsi&email=mandalavamsi%40gmailcom&pass=4559893&age=34&doj=2025-07-23&time=13%3A43&datetime=22-07-2025&datetimelocal=2025-07-23T13%3A43&week=2025-W30&color=%23000000&links=https%3A%2F%2Fwww.github.com&file=Himanth_Resume.pdf&skill=html&skill=js&gender=male&skillrange=2 -->
 
+        <!-- Select (Drop Down List) we can select only one option using this..
+             In Select tag we use value and option tag we want to use name for every options-->
+        <label for="skill">Select Role</label>
+        <select id="skill" name="skills" multiple>
+            <option value="developer">Developer</option>
+            <option value="designer">Designer</option>
+            <option value="manager">Manager</option>
+            <option value="analyst">Analyst</option>
+        </select>     
+        <br><br>
+        <!-- If we select developer option then it sends data to server like this, skills=developer  (name=value(selected attribute)) -->
+         <!-- If we want to select multiple options use multiple attr in select tag.-->
+
+
+        <!--Text area--> 
+        <label for="Comment">Comments</label>
+        <textarea rows = "5" cols="20" id="Comment" name="Comments" title="Enter your comments"required>
+        </textarea>
+        <!-- Placeholder can't work in textarea field-->
+        <br><br>
+
+        </fieldset>
+
+        <br><br>
+        <!--FieldSet is useful to group the fields and legend is useful to give a name of fieldset-->
         <button type="submit">SUBMIT</button>
         <button type="reset">RESET</button>
 
