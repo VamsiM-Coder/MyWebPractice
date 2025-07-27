@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Basic Validator</title>
+</head>
+<body>
+    <form>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" pattern="^[a-zA-Z\d!@#$%^]{8,}$" title="Enter 6 Characters Minimum" required>
+        <br><br>
+        <!-- . accepts all characters except new line(enter) minimum of 6 characters and max of n characters-->
+        <!-- For example: pattern=".{6,20}" for 6 to 20 characters-->
+
+        <!-- Ex:2 pattern without look heads-->
+        <!-- pattern="^[a-zA-Z\d!@#$%^]{8,}$"--> 
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

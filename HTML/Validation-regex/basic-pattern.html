@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern Validation - User Name</title>
+</head>
+<body>
+
+    <form>
+       <label for="username">User Name:</label>
+       <input type="text" id="username" name="username" pattern="^[A-Z]{1}[a-z]{1,}\s{1}[A-Z]{1}[a-z]{1,}\s{1}[A-Z]{1}[a-z]{1,}$" required>
+       <br><br>
+
+       <!--Normal UserName Regex: pattern="^[A-Za-z]{2,50}$"-->
+
+       <!--Title name case: pattern="^[A-Z]{1}[a-z]{1,}$" -->
+
+       <!--Ass1: firstname lastname: pattern="^[A-Z]{1}[a-z]{1,}[ ]{1}[A-Z]{1}[a-z]{1,}$" -->
+       <!--Ass2: firstname middleName lastname="^[A-Z]{1}[a-z]{1,}[ ]{1}[A-Z]{1}[a-z]{1,}[ ]{1}[A-Z]{1}[a-z]{1,}$"-->
+
+       <!-- For space we can use []{1} or \s{1}-->
+
+       <!-- \d represents [0-9]. In this we use type as text why because we want format as 123-456-7890 -->
+       <!-- pattern ="^\d{3}-\d{3}-\d{4}$" or pattern="^[0-9]{3}[-]{1}[0-9]{3}[-]{1}[0-9][-]{1}{4}$"-->
+       
+       <!--Ass1: +91 990-456-7890 pattern="^[+]{1}\d{2}\s{1}\d{3}-\d{3}-\d{4}$"
+                                      or "^+91\s{1}\d{3}-\d{3}-\d{4}$" -->
+       <label for="phone">Phone Number:</label>
+       <input type="text" id="phone" name="phone" pattern="^+91\s{1}\d{3}-\d{3}-\d{4}$" title="Format: 123-456-7890" required>
+       <br><br>
+
+       <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>
