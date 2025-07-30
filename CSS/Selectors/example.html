@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* Universal Selector */
+        * {
+            background-color: black;
+            color: white;
+        }
+        /* Group Selector */
+        h1,h2 {
+            color: yellow;
+        }
+        /*Id Selector */
+        #h1 {
+            text-align: center;
+            text-decoration: underline;
+        }
+        /* Element Selector */
+        #head1 {
+            font-size: 30px;
+            text-decoration:dashed underline;
+            font-family: sans-serif
+        }
+        #v1{
+            text-transform: uppercase;
+            font-weight: bold;
+            color:aquamarine
+        }
+        /* Class Selector */
+
+
+        /* Attribute Selector */
+        input[type="text"]{
+            background-color: lightblue;
+            color: black;
+        }
+        /* Descendant Selector */
+        div p {
+            color: blue;
+            font-size: 18px;
+        }
+        /* Child Selector */
+        
+        /* Adjacent Sibling Selector */
+        h2 + p {
+            color: green;
+            font-style: italic;
+        }
+        /* General Sibling Selector */
+        h1 ~ p {
+            color: orange;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="h1">Selectors</h1>
+    <p id="v1"> Hello </p>
+    <p> Para 1</p>
+    <p> Para 1</p>
+    <p> Para 1</p>
+    <p> Para 1</p>
+    <p> Para 1</p>
+    <h1 id="head1">Heading 1</h1>
+
+    <div>
+        <h2>Heading 2</h2>
+        <p>Para 2</p>
+    </div>
+
+    <h2>Heading 3</h2>
+    <p>Para 3</p>
+
+    <div>
+        <h2>Heading 4</h2>
+        <p>Para 4</p>
+        <p>para 5</p>
+    </div>
+
+    <p>para 6</p>
+    <p>para 7</p>
+
+</body>
+</html>

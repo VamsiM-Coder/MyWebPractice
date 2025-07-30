@@ -1,0 +1,26 @@
+
+        /* Universal Selector */
+        *{
+            background-color: black;
+            color: aliceblue;
+        }
+        /* Group Selector */
+        h1, h2 {
+            color: yellow;
+        }
+        /* ID selector */
+        #h1 {
+            text-align: center;
+            text-decoration: underline;
+        }
+        /* Element Selector */
+        #head1{
+            font-size: 50px;
+        }
+        /* class Selector */
+        .bpara{
+            color: blue;
+        }
+        .upara{
+            text-decoration: underline;
+        }
