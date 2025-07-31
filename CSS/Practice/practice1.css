@@ -1,0 +1,145 @@
+/* Selectors */
+
+
+
+/*Type or Element Selector*/
+p  {
+    color:blue;
+}
+label {
+    display: inline-block;
+    padding: 5px;
+    background-color: lightgray;
+    cursor:pointer;
+}
+table {
+    border-collapse:collapse;
+    width: 50%;
+    height: 100px;
+    margin: auto;
+}
+
+/* Class Selector */
+.highlight {
+    background-color: yellow;
+}
+
+/* ID Selector */
+#title {
+    text-align: center;
+    font-family: cursive;
+    background-color: deeppink;
+}
+#main {
+    font-weight: bold;
+    text-transform: uppercase;
+    background-image: url("sunrise.png");
+    text-align:center;
+}
+
+/* Universal Selector */
+* {
+    /* margin: 0; */
+    font-family : verdana;
+    /*or we can manually set all margins (top,bottom,right,left)*/
+}
+
+/* Grouping Selector */
+h2,p {
+    font-size: 20px;
+}
+/* Descendant Selector */
+.container p {
+    color: red;
+}
+/* Child Selector [direct child selector] */
+ul > li {
+    color:green;
+}
+/* Adjacent Sibling Selector */
+h3 + p {
+    font-style: italic;
+}
+/* General Sibling Selector [all sibling selector] */
+h4 ~ div {
+    color: orange;
+}
+/* Attribute Selector */
+input[type="text"] {
+   border: 2px solid red;
+}
+input[type="email"] {
+    background-color: lightblue;
+}
+/*
+^=	Starts with	href^="https" matches https://...
+*=	Contains anywhere	src*="logo" matches my-logo.png, logo2.svg
+$=	Ends with	src$=".png" matches image.png
+*/
+a[href^="https://"] {
+    color: purple;
+}
+a[href^="mailto:"] {
+    text-decoration: underline;
+    color: violet;
+}
+img[src*="pic"] {
+    border: 2px solid black;
+    width: 550px;
+    height: 200px;
+}
+
+
+/* Pseudo-classes*/
+
+/* :hover */
+.button:hover {
+    background-color: black;
+    color:green;
+    cursor: pointer;
+}
+/* :first-child */
+li:first-child {
+    font-weight: bold;
+}
+/* :nth-child(n)  n-> number, formula*/
+tr:nth-child(odd) {
+    background-color: lightpink;
+}
+/* not() */
+li:not(.no-style) {
+  color: green;
+  font-weight: bold;
+}
+/* :checked */
+input[type="checkbox"]:checked + label {
+    background-color: lightgreen;
+    color: white;
+}
+/* :focus */
+input:focus {
+    color: white;
+    background-color: green
+}
+/* :active */
+a:active {
+    color:brown;
+    background-color: green;
+}
+/* :visited */
+a:visited {
+    color:purple;
+}
+/* .class p:only-child */
+
+/* input:enabled */
+div input:enabled {
+    background-color: aqua;
+    border: 2px solid black;
+}
+div input:disabled {
+    background-color: grey;
+}
+
+
+/* Pseudo-Elements */

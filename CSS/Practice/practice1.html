@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selectors Exercise Worksheet</title>
+  <!-- Add your CSS rules inside a <style> tag or link an external CSS file -->
+  <link href="practice1.css" rel="stylesheet">  
+</head>
+<body>
+    <h1 id="main">CSS Selectors & pseudo-classes and elements Practice</h1>
+
+  <!-- Exercise 1: Type Selector -->
+  <!-- Q: Make all <p> elements have blue text -->
+  <p>This is a paragraph.</p>
+  <p>This is another paragraph.</p>
+
+  <!-- Exercise 2: Class Selector -->
+  <!-- Q: Make elements with class "highlight" have a yellow background -->
+  <div class="highlight">Important highlighted text.</div>
+
+  <!-- Exercise 3: ID Selector -->
+  <!-- Q: Center-align text with id="title" -->
+  <h1 id="title">Welcome to CSS Practice</h1>
+
+  <!-- Exercise 4: Universal Selector -->
+  <!-- Q: Remove margin from all elements using universal selector -->
+  <h2>Global Styling</h2>
+  <p>This should also follow universal rule.</p>
+
+  <!-- Exercise 5: Group Selector -->
+  <!-- Q: Make h2 and p have font-size 20px -->
+  <h2>Grouped Style Heading</h2>
+  <p>Grouped Style Paragraph</p>
+
+  <!-- Exercise 6: Descendant Selector -->
+  <!-- Q: Make <p> inside .container red -->
+  <div class="container">
+    <h2>Container Heading</h2>
+    <p>This is inside container div.</p>
+  </div>
+
+  <!-- Exercise 7: Child Selector -->
+  <!-- Q: Color direct child <li> green -->
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <ol><li>Nested Item</li></ol>
+  </ul>
+
+  <!-- Exercise 8: Adjacent Sibling Selector -->
+  <!-- Q: Italicize <p> that follows <h3> directly -->
+  <h3>Heading</h3>
+  <p>This should be italic.</p>
+  <p>This is me.</p>
+
+  <!-- Exercise 9: General Sibling Selector -->
+  <!-- Q: Color all <div> after <h4> orange -->
+  <h4>Start Point</h4>
+  <div>Div 1</div>
+  <div>Div 2</div>
+
+  <fieldset> 
+    <legend>User Details:</legend>
+  <!-- Exercise 10: Attribute Selector - [required] -->
+  <!-- Q: Add red border to required inputs -->
+   <label for="username:">Username:</label>
+  <input type="text" name="username" id="username" required placeholder="Required field">
+  <br><br>
+    <label for="email">Email:</label>
+  <input type="email" name="email" id="email" required placeholder="Required field"><br><br>
+  </fieldset><br>
+  <!-- Exercise 11: Attribute Selector - [href="..."] -->
+  <!-- Q: Color this link purple -->
+  <a href="https://example.com">Example Link</a><br>
+
+  <!-- Exercise 12: Attribute Selector - [href^="mailto:"] -->
+  <!-- Q: Underline all mailto links -->
+  <a href="mailto:test@example.com">Send Email</a><br><br
+
+  <!-- Exercise 13: Attribute Selector - [src*="user"] -->
+  <!-- Q: Add border to image with 'user' in src -->
+  <img src="pic.jpg" alt="User Image">
+
+  <!-- Exercise 14: Pseudo-class :hover -->
+  <!-- Q: Change background color of button on hover -->
+  <button class="button">Hover Me</button>
+
+  <!-- Exercise 15: Pseudo-class :first-child -->
+  <!-- Q: Make only first <li> bold -->
+  <ul>
+    <li>First Item</li>
+    <li>Second Item</li>
+  </ul>
+
+  <!-- Exercise 16: Pseudo-class :nth-child(odd) -->
+  <!-- Q: Alternate row color in table -->
+  <table border="1">
+    <tr><td>Row 1</td></tr>
+    <tr><td>Row 2</td></tr>
+    <tr><td>Row 3</td></tr>
+  </table>
+
+  <!-- Exercise 17: Pseudo-class :not() -->
+  <!-- Q: Style all <li> except class="no-style" -->
+  <ol>
+    <li class="no-style">Skip me1</li>
+    <li>Style me2</li>
+  </ol>
+
+  <!-- Exercise 18: Pseudo-class :checked -->
+  <!-- Q: Make label green if checkbox is checked -->
+  <input type="checkbox" id="check1" checked>
+  <label for="check1">Subscribe</label>
+
+  <!--Style the input that is enabled-->
+  <div>
+  <input type="text" value="I am enabled">
+  <input type="text" disabled value="I am disabled">
+  </div>
+
+  <!-- Exercise 19: ::first-line -->
+  <!-- Q: Make the first line of this paragraph bold -->
+  <p>This paragraph has a long text to check the effect of styling just the first line with CSS pseudo-element.</p>
+
+  <!-- Exercise 20: ::first-letter -->
+  <!-- Q: Make first letter large and red -->
+  <p>Styling the first letter of this paragraph.</p>
+
+  <!-- Exercise 21: ::before & ::after -->
+  <!-- Q: Add 📘 before and ✔ after this heading using ::before and ::after -->
+  <h2>Chapter 1</h2>
+
+  <!-- Exercise 22: ::placeholder -->
+  <!-- Q: Make placeholder gray and italic -->
+   <label for="name">Name:</label>
+  <input type="text" id="name" class="name" placeholder="Enter your name"><br><br
+
+  <!-- BONUS Challenge -->
+  <!-- Style this form using various selectors and pseudo-classes -->
+  <form>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required placeholder="you@example.com"><br><br>
+
+    <label for="pass">Password:</label><br>
+    <input type="password" id="pass" name="pass" required placeholder="Password"><br><br>
+
+    <button>Login</button>
+  </form>
+
+</body>
+</html>

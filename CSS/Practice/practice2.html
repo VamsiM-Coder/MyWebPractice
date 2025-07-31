@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced CSS Selectors Practice</title>
+  <!-- Add your CSS in a <style> block or external file -->
+</head>
+<body>
+
+  <h1>Advanced CSS Selectors – Practice Sheet</h1>
+
+  <!-- Exercise 1: nth-of-type -->
+  <!-- Q: Make every 2nd <li> of each <ul> italic using :nth-of-type -->
+  <ul>
+    <li>Item A</li>
+    <li>Item B</li>
+    <li>Item C</li>
+    <li>Item D</li>
+  </ul>
+
+  <ul>
+    <li>Alpha</li>
+    <li>Beta</li>
+    <li>Gamma</li>
+  </ul>
+
+  <!-- Exercise 2: only-child -->
+  <!-- Q: Make the <p> that is the only child of its parent red -->
+  <div>
+    <p>This is the only child paragraph.</p>
+  </div>
+
+  <div>
+    <p>This is not the only child.</p>
+    <span>Another child</span>
+  </div>
+
+  <!-- Exercise 3: Pseudo-class chaining with combinators -->
+  <!-- Q: Make the first <li> of any <ul> inside .menu-container bold and blue -->
+  <div class="menu-container">
+    <ul>
+      <li>Dashboard</li>
+      <li>Profile</li>
+      <li>Logout</li>
+    </ul>
+  </div>
+
+  <!-- Exercise 4: Deep nesting -->
+  <!-- Q: Color any <span> inside a <div> that is inside a <section> green -->
+  <section>
+    <div>
+      <span>This should be green</span>
+    </div>
+  </section>
+
+  <!-- Exercise 5: Not selector with multiple conditions -->
+  <!-- Q: Select all <input> that are NOT of type 'submit' or 'checkbox' -->
+  <form>
+    <input type="text" placeholder="Name">
+    <input type="email" placeholder="Email">
+    <input type="submit" value="Submit">
+    <input type="checkbox" id="terms">
+    <label for="terms">Agree to Terms</label>
+  </form>
+
+  <!-- Exercise 6: before/after with positioning -->
+  <!-- Q: Add a label using ::before and a check mark using ::after on <h2 class="labeled"> -->
+  <h2 class="labeled">Advanced Section</h2>
+
+  <!-- Exercise 7: Styling deeply nested structures -->
+  <!-- Q: Style <em> tags that are inside <li> which are inside <ul> with class "deep" -->
+  <ul class="deep">
+    <li>Normal</li>
+    <li><em>Important</em> item</li>
+    <li><strong>Another</strong> item</li>
+  </ul>
+
+  <!-- Exercise 8: Placeholder styling and invalid input -->
+  <!-- Q: Make placeholder text gray and show red border if the input is invalid -->
+  <input type="email" placeholder="Enter valid email" required>
+
+  <!-- Exercise 9: Adjacent & general siblings -->
+  <!-- Q: Change color of any <p> that comes immediately after <h4> and all <p> after <h5> -->
+  <h4>Title One</h4>
+  <p>Paragraph after h4 (adjacent)</p>
+
+  <h5>Title Two</h5>
+  <div>Not a paragraph</div>
+  <p>Paragraph 1 after h5</p>
+  <p>Paragraph 2 after h5</p>
+
+  <!-- Exercise 10: Combine :hover, :focus, :active -->
+  <!-- Q: Style input on hover, focus, and when active differently -->
+  <input type="text" placeholder="Try interacting with me">
+
+</body>
+</html>
