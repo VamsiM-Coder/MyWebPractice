@@ -130,7 +130,10 @@ a:active {
 a:visited {
     color:purple;
 }
+
 /* .class p:only-child */
+/* It is only applicable only selector have only child element*/
+
 
 /* input:enabled */
 div input:enabled {
@@ -140,6 +143,6 @@ div input:enabled {
 div input:disabled {
     background-color: grey;
 }
-
-
 /* Pseudo-Elements */
+
+
