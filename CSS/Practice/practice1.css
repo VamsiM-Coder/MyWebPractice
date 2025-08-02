@@ -143,6 +143,42 @@ div input:enabled {
 div input:disabled {
     background-color: grey;
 }
+
 /* Pseudo-Elements */
+
+
+/* ::first-line */
+p::first-line {
+     font-weight: bold;
+}
+/* ::first-letter */
+p::first-letter {
+    font-size: 1.5em;
+    color: red;
+}
+/* ::Before */
+p::before {
+    content: "Note:";
+}
+/* ::after */
+p::after {
+    content: "-- End of the Para.."
+}
+/* ::selection */
+p::selection {
+    color: white;
+    background-color: black;
+}
+/* :: placeholder */
+input::placeholder {
+    color:black;
+    font-style: italic;
+}
+/* ::marker */
+li ::marker {
+    font-size: 2em;
+    color: blue;
+}
+
 
 
